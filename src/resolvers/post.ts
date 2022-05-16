@@ -2,6 +2,7 @@ import { MyContext } from 'src/types';
 import { Ctx, Query, Resolver } from 'type-graphql';
 import { Post } from '../entities/Post';
 
+// When using typeGraphQL we need to set types twice.
 @Resolver()
 export class PostResolver {
   @Query(() => [Post])
